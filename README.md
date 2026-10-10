@@ -39,9 +39,12 @@ Then open [http://localhost:5000](http://localhost:5000)
 
 ## 🐳 Run with Docker
 ```bash
-docker build -t theshubhamgour/flask-portfolio .
-docker run -p 5000:5000 theshubhamgour/flask-portfolio
+docker build -t flask-portfolio:local .
+docker run --rm -p 5000:5000 flask-portfolio:local
 ```
+
+The container runs the app with gunicorn as a non-root user.
+Then open [http://localhost:5000](http://localhost:5000).
 
 ---
 <img width="1440" height="813" alt="Screenshot 2025-11-04 at 9 00 03 PM" src="https://github.com/user-attachments/assets/fbc73e3e-5141-4984-8820-d4be0848d536" />
